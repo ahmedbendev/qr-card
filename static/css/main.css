@@ -1,0 +1,406 @@
+/* ========================================
+   CUSTOM FONTS - Kaleko105
+   ======================================== */
+@font-face {
+    font-family: 'Kaleko105';
+    src: url("../fonts/Kaleko105/Kaleko105Book.woff2") format('woff2'),
+         url("../fonts/Kaleko105/Kaleko105Book.woff") format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Kaleko105';
+    src: url("../fonts/Kaleko105/Kaleko105Bold.woff2") format('woff2'),
+         url("../fonts/Kaleko105/Kaleko105Bold.woff") format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Kaleko105';
+    src: url("../fonts/Kaleko105/Kaleko105Light.woff2") format('woff2'),
+         url("../fonts/Kaleko105/Kaleko105Light.woff") format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Kaleko105';
+    src: url("../fonts/Kaleko105/Kaleko105Heavy.woff2") format('woff2'),
+         url("../fonts/Kaleko105/Kaleko105Heavy.woff") format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Kaleko105';
+    src: url("../fonts/Kaleko105/Kaleko105Thin.woff2") format('woff2'),
+         url("../fonts/Kaleko105/Kaleko105Thin.woff") format('woff');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* ========================================
+   GLOBAL STYLES
+   ======================================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Kaleko105', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+/* ========================================
+   DASHBOARD STYLES
+   ======================================== */
+.dashboard-body {
+    background-color: #f8f9fa;
+}
+
+/* Top Navbar */
+.top-navbar {
+    background-color: #ffffff;
+    padding: 15px 0;
+    border-bottom: 2px solid #e9ecef;
+}
+
+.top-navbar .container-fluid {
+    padding: 0;
+}
+.container-fluid {
+    padding: 0;
+}
+
+
+.navbar-brand img {
+    height: 45px;
+    object-fit: contain;
+}
+
+.navbar-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+/* Content Header */
+.content-header {
+        padding: 25px 0;
+    }
+
+.page-title {
+    font-family: 'Kaleko105', sans-serif;
+    font-weight: bold;
+    color: #0c1d22;
+    margin: 0;
+    font-size: 1.5rem;
+}
+
+/* Main content adjustments */
+.main-content {
+    padding-bottom: 2rem;
+}
+
+/* Table Styles */
+.table td {
+    vertical-align: middle;
+    font-family: 'Kaleko105', sans-serif;
+}
+
+.table th {
+    font-family: 'Kaleko105', sans-serif;
+    font-weight: bold;
+    background-color: #0c1d22 !important;
+    color: white;
+}
+
+.qr-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+/* Button Styles */
+.btn {
+    font-family: 'Kaleko105', sans-serif;
+    font-weight: 500;
+    border-radius: 6px;
+}
+
+.btn-primary {
+    background-color: #01e884;
+    border-color: #01e884;
+}
+
+.btn-primary:hover {
+    background-color: #01ce75;
+    border-color: #01ce75;
+}
+
+/* Modal Styles */
+.modal-title {
+    font-family: 'Kaleko105', sans-serif;
+    font-weight: bold;
+}
+
+.form-label {
+    font-family: 'Kaleko105', sans-serif;
+    font-weight: 500;
+}
+
+.form-control {
+    font-family: 'Kaleko105', sans-serif;
+}
+
+/* Table Container */
+.table-container {
+    background-color: #ffffff;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+/* ========================================
+   LANDING PAGE STYLES
+   ======================================== */
+.landing-body {
+    background-color: #f5f5f5;
+    color: #333;
+    min-height: 100vh;
+    position: relative;
+    padding-bottom: 80px;
+}
+
+.header-bg {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 20vh;
+    width: 100%;
+    position: relative;
+}
+
+.profile-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 20px 30px;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.profile-pic {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    background-color: white;
+    border: 10px solid #f5f5f5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: -90px;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.profile-pic img {
+    max-width: 70%;
+    max-height: 70%;
+    object-fit: contain;
+}
+
+.full-name {
+    margin-top: 25px;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    color: #0C1D22;
+    font-family: 'Kaleko105', sans-serif;
+}
+
+.role {
+    margin-top: 5px;
+    color: #666;
+    font-size: 20px;
+    text-align: center;
+    font-family: 'Kaleko105', sans-serif;
+}
+
+.location {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    color: #0C1D22;
+    font-family: 'Kaleko105', sans-serif;
+}
+
+.location i {
+    margin-right: 8px;
+    color: #01E884;
+}
+
+.contact-btn {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 15px;
+    margin-top: 20px;
+    background-color: #f8f8f8;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    text-decoration: none;
+    color: #333;
+    font-size: 18px;
+    font-family: 'Kaleko105', sans-serif;
+    transition: all 0.3s ease;
+}
+
+.contact-btn:hover {
+    background-color: #e9e9e9;
+    color: #333;
+}
+
+.contact-btn .custom-icon {
+    margin-right: 15px;
+    width: 20px;
+    height: 20px;
+    object-fit: contain;
+}
+
+.social-section {
+    margin-top: 30px;
+    text-align: center;
+    width: 100%;
+}
+
+.social-title {
+    font-size: 18px;
+    color: #666;
+    font-family: 'Kaleko105', sans-serif;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.social-icon {
+    font-size: 50px;
+    color: #0066cc;
+    text-decoration: none;
+    transition: transform 0.3s ease;
+}
+
+.social-icon:hover {
+    transform: scale(1.1);
+}
+
+.footer {
+    position: absolute;
+    bottom: 30px;
+    left: 0;
+    right: 0;
+    text-align: center;
+    color: #999;
+    font-size: 14px;
+    font-family: 'Kaleko105', sans-serif;
+}
+
+.footer a {
+    color: #01E884;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer a:hover {
+    color: rgb(0, 120, 68);
+    text-decoration: underline;
+}
+
+/* ========================================
+   RESPONSIVE DESIGN
+   ======================================== */
+
+/* Mobile - Small devices */
+@media (max-width: 380px) {
+    .profile-pic {
+        width: 130px;
+        height: 130px;
+        margin-top: -60px;
+    }
+    
+    .full-name {
+        font-size: 24px;
+    }
+    
+    .contact-btn {
+        padding: 12px;
+    }
+    
+    .page-title {
+        font-size: 1.3rem;
+    }
+}
+
+/* Tablet - Medium devices */
+@media (min-width: 768px) {
+    .profile-container {
+        padding: 0 40px 40px;
+    }
+    
+    .contact-btn {
+        max-width: 450px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .content-header {
+        padding: 30px 0;
+    }
+    
+    .navbar-content,
+    .content-wrapper,
+    .main-content {
+        padding-left: 2.5rem;
+        padding-right: 2.5rem;
+    }
+}
+
+/* Desktop - Large devices */
+@media (min-width: 1200px) {
+    .page-title {
+        font-size: 2rem;
+    }
+    
+    .navbar-content,
+    .content-wrapper,
+    .main-content {
+        padding-left: 3rem;
+        padding-right: 3rem;
+    }
+}
+
+/* Responsive adjustments */
+@media (min-width: 576px) {
+    .navbar-content,
+    .content-wrapper,
+    .main-content {
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+}
